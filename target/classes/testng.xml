@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestNG Parallel Testing Suite" parallel="tests" thread-count="4">
+
+	<!-- ###### Below is Based on Classes Level Execution ###### -->
+	<!-- Here we have 4 Tests in Classes Level and we are Defining parallel="classes" -->
+	<!-- thread-count="4" >> 4 Browser Instances will be Launched at a Same Time -->
+	<!-- Test Execution will Execute in Parallel in 4 Browser Instances -->
+	<test name="TestNG Parallel Chrome Tests in Classes Level">
+		<classes>
+			<class name="com.ParallelExecutionTests.ChromeTest1"/>
+			<class name="com.ParallelExecutionTests.ChromeTest2"/>
+			<class name="com.ParallelExecutionTests.FirefoxTest1"/>
+			<class name="com.ParallelExecutionTests.FirefoxTest2"/>
+		</classes>
+	</test>
+
+	<!-- ###### Below is Based on Tests Level Execution ###### -->
+	<!-- parallel="tests" thread-count="4 >> One-One Instance will be Launched for Each Test Level -->
+	<!-- All though we have defined thread-count="4 Still 2 Instances will be Opened at a Time -->
+	<!-- Since we have only 2 Test Sets as Shown Below -->
+	<!-- If we have 4 Test Sets then 4 Instances will be Opened -->
+	<!-- If 4 Instances are Opened then One-One Instance for Each Test Set -->
+	<!-- Test Sets will execute in Parallel and in Sequential Order -->
+	<test name="TestNG Parallel Chrome Tests in Tests Level">
+		<classes>
+			<class name="com.ParallelExecutionTests.ChromeTest1"/>
+			<class name="com.ParallelExecutionTests.ChromeTest2"/>
+		</classes>
+	</test>
+
+	<test name="TestNG Parallel Firefox Tests in Tests Level">
+		<classes>
+			<class name="com.ParallelExecutionTests.FirefoxTest1"/>
+			<class name="com.ParallelExecutionTests.FirefoxTest2"/>
+		</classes>
+	</test>
+</suite> 
