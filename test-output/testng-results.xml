@@ -2,30 +2,30 @@
 <testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="TestNG Parallel Testing Suite" duration-ms="60481" started-at="2020-03-08T08:29:43Z" finished-at="2020-03-08T08:30:43Z">
+  <suite name="TestNG Parallel Testing Suite" duration-ms="61024" started-at="2020-03-08T10:38:08Z" finished-at="2020-03-08T10:39:09Z">
     <groups>
     </groups>
-    <test name="TestNG Parallel Chrome Tests in Classes Level" duration-ms="60481" started-at="2020-03-08T08:29:43Z" finished-at="2020-03-08T08:30:43Z">
+    <test name="TestNG Parallel Chrome Tests in Classes Level" duration-ms="61024" started-at="2020-03-08T10:38:08Z" finished-at="2020-03-08T10:39:09Z">
       <class name="com.ParallelExecutionTests.ChromeTest2">
-        <test-method status="PASS" signature="chromeTest2()[pri:0, instance:com.ParallelExecutionTests.ChromeTest2@cc285f4]" name="chromeTest2" duration-ms="60443" started-at="2020-03-08T13:59:43Z" finished-at="2020-03-08T14:00:43Z">
+        <test-method status="PASS" signature="chromeTest2()[pri:0, instance:com.ParallelExecutionTests.ChromeTest2@cc285f4]" name="chromeTest2" duration-ms="41145" started-at="2020-03-08T16:08:08Z" finished-at="2020-03-08T16:08:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chromeTest2 -->
       </class> <!-- com.ParallelExecutionTests.ChromeTest2 -->
       <class name="com.ParallelExecutionTests.ChromeTest1">
-        <test-method status="PASS" signature="chromeTest1()[pri:0, instance:com.ParallelExecutionTests.ChromeTest1@6767c1fc]" name="chromeTest1" duration-ms="55592" started-at="2020-03-08T13:59:43Z" finished-at="2020-03-08T14:00:39Z">
+        <test-method status="PASS" signature="chromeTest1()[pri:0, instance:com.ParallelExecutionTests.ChromeTest1@6767c1fc]" name="chromeTest1" duration-ms="18232" started-at="2020-03-08T16:08:08Z" finished-at="2020-03-08T16:08:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chromeTest1 -->
       </class> <!-- com.ParallelExecutionTests.ChromeTest1 -->
       <class name="com.ParallelExecutionTests.FirefoxTest2">
-        <test-method status="PASS" signature="firefoxTest2()[pri:0, instance:com.ParallelExecutionTests.FirefoxTest2@8bd1b6a]" name="firefoxTest2" duration-ms="58636" started-at="2020-03-08T13:59:43Z" finished-at="2020-03-08T14:00:42Z">
+        <test-method status="PASS" signature="firefoxTest2()[pri:0, instance:com.ParallelExecutionTests.FirefoxTest2@8bd1b6a]" name="firefoxTest2" duration-ms="54830" started-at="2020-03-08T16:08:08Z" finished-at="2020-03-08T16:09:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- firefoxTest2 -->
       </class> <!-- com.ParallelExecutionTests.FirefoxTest2 -->
       <class name="com.ParallelExecutionTests.FirefoxTest1">
-        <test-method status="PASS" signature="firefoxTest1()[pri:0, instance:com.ParallelExecutionTests.FirefoxTest1@55f3ddb1]" name="firefoxTest1" duration-ms="55744" started-at="2020-03-08T13:59:43Z" finished-at="2020-03-08T14:00:39Z">
+        <test-method status="PASS" signature="firefoxTest1()[pri:0, instance:com.ParallelExecutionTests.FirefoxTest1@55f3ddb1]" name="firefoxTest1" duration-ms="60992" started-at="2020-03-08T16:08:08Z" finished-at="2020-03-08T16:09:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- firefoxTest1 -->

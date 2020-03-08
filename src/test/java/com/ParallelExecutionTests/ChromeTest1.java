@@ -17,6 +17,7 @@ public class ChromeTest1
 	public void chromeTest1() throws MalformedURLException
 	{
 		WebDriverManager.chromedriver().setup();
+		System.setProperty("webdriver.chrome.silentOutput", "true");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();

@@ -4,7 +4,7 @@ import java.net.MalformedURLException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -16,8 +16,9 @@ public class FirefoxTest1
 	@Test
 	public void firefoxTest1() throws MalformedURLException
 	{
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
+		WebDriverManager.firefoxdriver().setup();
+		System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, "null");
+		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 			
