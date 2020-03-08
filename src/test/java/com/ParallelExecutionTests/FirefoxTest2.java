@@ -11,7 +11,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class FirefoxTest2 
 {
-	WebDriver driver;
+	public static WebDriver driver;
 	
 	@Test
 	public void firefoxTest2() throws MalformedURLException
@@ -21,13 +21,13 @@ public class FirefoxTest2
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 			
-		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
-		driver.get("https://www.gmail.com");
+		driver.get("https://www.amazon.com/");
 		
 		String title = driver.getTitle();
-		System.out.println("The firefoxTest_2 Gmail Title is ::: " +title);
+		System.out.println("The firefoxTest_2 Amazon Title is ::: " +title);
 		
 		driver.quit();
 	}

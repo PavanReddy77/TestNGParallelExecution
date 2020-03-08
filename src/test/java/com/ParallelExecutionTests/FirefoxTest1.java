@@ -11,7 +11,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class FirefoxTest1 
 {
-	WebDriver driver;
+	public static WebDriver driver;
 	
 	@Test
 	public void firefoxTest1() throws MalformedURLException
@@ -21,13 +21,13 @@ public class FirefoxTest1
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 			
-		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
-		driver.get("https://www.facebook.com");
+		driver.get("https://github.com/");
 		
 		String title = driver.getTitle();
-		System.out.println("The FirefoxTest_1 Facebook Title is ::: " +title);
+		System.out.println("The FirefoxTest_1 Github Title is ::: " +title);
 		
 		driver.quit();
 	}

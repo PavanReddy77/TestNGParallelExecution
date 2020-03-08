@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="TestNG Parallel Testing Suite" parallel="tests" thread-count="4">
+<suite name="TestNG Parallel Testing Suite" parallel="classes" thread-count="4">
 
 	<!-- ###### Below is Based on Classes Level Execution ###### -->
 	<!-- Here we have 4 Tests in Classes Level and we are Defining parallel="classes" -->

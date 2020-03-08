@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [TestNG Parallel Testing Suite]" parallel="classes">
+  <test name="TestNG Parallel Chrome Tests in Classes Level(failed)" parallel="classes">
+    <classes>
+      <class name="com.ParallelExecutionTests.ChromeTest1">
+        <methods>
+          <include name="chromeTest1"/>
+        </methods>
+      </class> <!-- com.ParallelExecutionTests.ChromeTest1 -->
+      <class name="com.ParallelExecutionTests.ChromeTest2">
+        <methods>
+          <include name="chromeTest2"/>
+        </methods>
+      </class> <!-- com.ParallelExecutionTests.ChromeTest2 -->
+      <class name="com.ParallelExecutionTests.FirefoxTest1">
+        <methods>
+          <include name="firefoxTest1"/>
+        </methods>
+      </class> <!-- com.ParallelExecutionTests.FirefoxTest1 -->
+      <class name="com.ParallelExecutionTests.FirefoxTest2">
+        <methods>
+          <include name="firefoxTest2"/>
+        </methods>
+      </class> <!-- com.ParallelExecutionTests.FirefoxTest2 -->
+    </classes>
+  </test> <!-- TestNG Parallel Chrome Tests in Classes Level(failed) -->
+</suite> <!-- Failed suite [TestNG Parallel Testing Suite] -->
